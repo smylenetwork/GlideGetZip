@@ -1,8 +1,8 @@
 [
   {
     "kind": "column",
-    "name": "City Fetch",
-    "description": "Fetch user's City",
+    "name": "Zip Code Fetch",
+    "description": "Fetch user's Zip Code",
     "author": "Vlad Penev",
     "params": [
     ],
