@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "column",
+    "name": "City Fetch",
+    "description": "Fetch user's City",
+    "author": "Vlad Penev",
+    "params": [
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
