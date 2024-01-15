@@ -4,5 +4,5 @@ window.function = async function () {
   const data = await response.json();
 
   // Return the IP address
-  return data.city;
+  return data.postal;
 }
