@@ -1,8 +1,17 @@
 window.function = async function () {
-  // Use fetch API to get location details
-  const response = await fetch('https://ipwho.is/');
-  const data = await response.json();
+  try {
+    // Fetch geolocation data from ipapi.co
+    const response = await fetch('https://ipapi.co/json/');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-  // Return only the ZIP code
-  return data.postal;
+    const data = await response.json();
+
+    // Return only the ZIP code
+    return data.postal || "ZIP code not found";
+  } catch (error) {
+    // Handle errors gracefully
+    return `Error: ${error.message}`;
+  }
 };
